@@ -27,12 +27,12 @@ function App() {
                         <span>{weather.name}</span>
                         <sup>{weather.sys.country}</sup>
                     </h2>
-                    <div className="city-temp">
+                    <div>
                         {Math.round(weather.main.temp)}
                         <sup>&deg;C</sup>
                     </div>
                     <div className="info">
-                        <img className="city-icon" src={getCityIcon(weather.weather[0].icon)}
+                        <img src={getCityIcon(weather.weather[0].icon)}
                              alt={weather.weather[0].description}/>
                         <p>{weather.weather[0].description}</p>
                     </div>
