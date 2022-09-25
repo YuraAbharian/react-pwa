@@ -15,7 +15,7 @@ function App() {
             setWeather(await result.json());
         }
     }
-    console.log('weather', weather)
+
     return (
         <main>
             <input type="text" value={query} onChange={onChangeHandler} onKeyDown={onKeyDownHandler}
